@@ -50,10 +50,7 @@ dsp_block_2 dsp31 (.a(ja), .b(jb), .p(p15_i), .clk(clk), .reset(reset));
 reg signed [63:0] q0_r, q0_i, q1_r, q1_i, q2_r, q2_i, q3_r, q3_i;
 reg signed [63:0] q4_r, q4_i, q5_r, q5_i, q6_r, q6_i, q7_r, q7_i;
 // Combine intermediate results to produce final output
-assign y_r = p0_r - p0_i;
-assign y_i = p1_r + p1_i;
-assign y_r = y_r + p2_r - p2_i;
-assign y_i = y_i + p3_r + p3_i;
+
 
 
 
